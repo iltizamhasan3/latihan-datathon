@@ -1,0 +1,56 @@
+{
+  "timestamp": "2026-07-16 00:08:08",
+  "checks": {
+    "preprocessing_within_fold": {
+      "passed": true,
+      "details": "PCA dims per fold: [np.int64(47), np.int64(47), np.int64(47), np.int64(47), np.int64(47), np.int64(47), np.int64(47), np.int64(47), np.int64(47), np.int64(47)] \u2014 all folds have same dims"
+    },
+    "feature_engineering_target_leak": {
+      "passed": true,
+      "details": "features.py does not compute any feature using the target column. All features are based on row-level attributes only."
+    },
+    "oof_sample_isolation": {
+      "passed": true,
+      "details": "Each sample in val 2-2 times, in train 8-8 times. No overlap found: True"
+    },
+    "stacking_oof_method": {
+      "passed": true,
+      "details": "All stacking experiments (Phase 3, 4b, 6, 8, final) use OOF probabilities for meta-training and fold-averaged test probabilities. No in-sample leakage."
+    },
+    "threshold_optimization": {
+      "passed": true,
+      "details": "Phase 5 threshold optimization done on OOF predictions (standard practice). Not using nested CV but effect is minimal (0.001 improvement reported)."
+    },
+    "suspicious_feature_names": {
+      "passed": true,
+      "details": "Suspicious features found: None"
+    },
+    "max_mutual_information": {
+      "passed": true,
+      "details": "Max MI = 0.1525 (feature: trend_task). All features have low individual predictivity."
+    },
+    "exact_duplicates": {
+      "passed": true,
+      "details": "Exact duplicate rows: 0"
+    },
+    "near_duplicate_conflicts": {
+      "passed": true,
+      "details": "Near-duplicate conflicts found (distance<0.1, diff target): 0 out of 500 samples checked"
+    },
+    "adversarial_validation": {
+      "passed": true,
+      "details": "Adversarial accuracy: 0.5340 (close to 0.5 = indistinguishable)"
+    },
+    "id_target_correlation": {
+      "passed": true,
+      "details": "ID-target correlation: -0.005071 (leakage via row ordering)"
+    },
+    "monotonic_column_leakage": {
+      "passed": true,
+      "details": "No columns show near-perfect correlation (>0.995) with ID."
+    }
+  },
+  "critical_findings": [],
+  "minor_findings": [],
+  "overall_verdict": "NO_CRITICAL_LEAKAGE"
+}

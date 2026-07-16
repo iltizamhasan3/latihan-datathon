@@ -1,1 +1,6 @@
 CLAUDE.md
+.claude/
+catboost_info/
+__pycache__/
+*.pyc
+.DS_Store

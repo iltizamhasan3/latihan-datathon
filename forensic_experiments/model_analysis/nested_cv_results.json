@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-07-16 02:03:36.989687",
+  "experiment": "Nested CV Stack_LR_C0.1+Ordinal+seq",
+  "nested_accuracy": 0.5859375,
+  "nested_f1": 0.5787213316318405,
+  "outer_fold_scores": [
+    0.5671875,
+    0.615625,
+    0.5734375,
+    0.6125,
+    0.5609375
+  ],
+  "mean_outer": 0.5859375,
+  "std_outer": 0.02332263519630662,
+  "standard_oof_best": 0.5975,
+  "gap_vs_standard": 0.011562500000000031,
+  "runtime": 909.2610428333282
+}

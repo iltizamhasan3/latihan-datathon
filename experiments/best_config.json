@@ -1,0 +1,15 @@
+{
+  "experiment_id": "EXP-027",
+  "model": "Stack_LR",
+  "feature_set": "stack_meta",
+  "parameters": "{'C': 1.0, 'class_weight': None, 'dual': False, 'fit_intercept': True, 'intercept_scaling': 1, 'l1_ratio': 0.0, 'max_iter': 1000, 'n_jobs': None, 'penalty': 'deprecated', 'random_state': 42, 'solver': 'lbfgs', 'tol': 0.0001, 'verbose': 0, 'warm_start': False}",
+  "timestamp": "2026-07-15 21:01:30",
+  "metrics": {
+    "mean_accuracy": 0.5859375,
+    "std_accuracy": 0.018995784894286414,
+    "min_fold": 0.553125,
+    "macro_f1": 0.5827079501623087,
+    "balanced_accuracy": 0.5842770710037531,
+    "overfit_gap": 0.0047265625000000085
+  }
+}

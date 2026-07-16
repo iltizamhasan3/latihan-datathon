@@ -1,0 +1,7 @@
+{
+  "phase": "4b",
+  "best_accuracy": 0.5869,
+  "best_macro_f1": 0,
+  "best_model": "Stack_LR",
+  "timestamp": "2026-07-15 21:51:03"
+}

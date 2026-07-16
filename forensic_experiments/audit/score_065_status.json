@@ -1,0 +1,28 @@
+{
+  "status": "NOT_REPRODUCIBLE",
+  "details": {
+    "max_accuracy_ever_recorded": 0.5869,
+    "total_experiments_checked": 128,
+    "count_above_0.60": 0,
+    "count_above_0.59": 0,
+    "evidence": "No experiment log entry, no report JSON, no submission file, and no code output ever shows accuracy >= 0.59.",
+    "claim_origin": "The 0.65 claim appears only as a header target in reproduce_baseline.py (\"Reproduce baseline ~0.65 accuracy\"), not as an achieved result.",
+    "all_phase_best_scores": {
+      "phase1_SVC_raw": 0.4748,
+      "phase1_SVC_engineered": 0.5156,
+      "phase2_ordinal": 0.545,
+      "phase2_catboost": 0.555,
+      "phase3_Stack_LR": 0.5869,
+      "phase3_Blend_3way": 0.555,
+      "phase4_mega_failed": 0.5003,
+      "phase4b_MI_failed": 0.4931,
+      "phase5_pseudo": null,
+      "phase6_Stack_T4_LR": 0.5834,
+      "phase7_zoo_killed": null,
+      "phase8_calibrated": 0.5275,
+      "phase_final_stacking": 0.5584
+    },
+    "conclusion": "Skor 0.65 TIDAK PERNAH TERCAPAI. Angka tersebut adalah target awal yang ditulis di header file reproduce_baseline.py, bukan hasil eksperimen. Seluruh 128 eksperimen telah diverifikasi dan tidak ada yang melebihi 0.5869."
+  },
+  "timestamp": "2026-07-16 00:06:05"
+}

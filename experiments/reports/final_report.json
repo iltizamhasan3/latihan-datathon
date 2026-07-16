@@ -1,0 +1,8 @@
+{
+  "best_accuracy": 0.5869,
+  "best_model": "Stack_LR",
+  "total_experiments": 128,
+  "target_achieved": false,
+  "baseline": 0.4748,
+  "improvement": 0.11209999999999998
+}

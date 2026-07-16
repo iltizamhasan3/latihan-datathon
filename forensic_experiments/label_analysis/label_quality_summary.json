@@ -1,0 +1,31 @@
+{
+  "timestamp": "2026-07-16 00:24:07",
+  "total_samples": 3200,
+  "n_models": 15,
+  "models_used": [
+    "SVC",
+    "CatBoost",
+    "RF",
+    "ET",
+    "HGB"
+  ],
+  "seeds_used": [
+    42,
+    123,
+    2026
+  ],
+  "category_distribution": {
+    "EASY_CORRECT": 1086,
+    "CONSISTENTLY_WRONG": 907,
+    "UNCERTAIN": 757,
+    "BORDERLINE_CORRECT": 450
+  },
+  "possible_mislabels": 601,
+  "hard_samples": 1664,
+  "majority_vote_accuracy": 0.5159375,
+  "majority_vote_f1": 0.49797881603734073,
+  "easy_correct": 1086,
+  "high_confidence_wrong": 0,
+  "consistently_wrong": 907,
+  "uncertain": 757
+}

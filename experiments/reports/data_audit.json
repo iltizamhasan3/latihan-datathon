@@ -1,0 +1,24 @@
+{
+  "shape_train": [
+    3200,
+    43
+  ],
+  "shape_test": [
+    800,
+    42
+  ],
+  "missing_train": 0,
+  "missing_test": 0,
+  "duplicates": 0,
+  "constant_features": [],
+  "near_constant_features": [],
+  "id_target_corr": -0.00507056798757404,
+  "adv_auc_mean": 0.525845703125,
+  "adv_auc_std": 0.009499218958821679,
+  "target_distribution": {
+    "0": 813,
+    "3": 807,
+    "1": 796,
+    "2": 784
+  }
+}

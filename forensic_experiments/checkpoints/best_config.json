@@ -1,0 +1,27 @@
+{
+  "model": "Stack_LR_C0.1_SVC+CatBoost+Ordinal_seq",
+  "features": [
+    "base_engineered",
+    "seq_week_slope_robust",
+    "seq_week_acceleration",
+    "seq_week_curvature",
+    "seq_week_autocorr_lag1",
+    "seq_week_spectral_entropy",
+    "seq_week_change_points",
+    "seq_act_slope_robust",
+    "seq_act_acceleration",
+    "seq_act_curvature",
+    "seq_act_autocorr_lag1",
+    "seq_act_spectral_entropy",
+    "seq_act_change_points"
+  ],
+  "base_models": [
+    "SVC(C=50,gamma=auto)",
+    "CatBoost(400,depth=6,lr=0.05)",
+    "Ordinal(HGB, 3 bins)"
+  ],
+  "meta_model": "LogisticRegression(C=0.1)",
+  "cv": "RepeatedStratifiedKFold(5,2)",
+  "accuracy": 0.59,
+  "f1": 0.5803857085941506
+}
