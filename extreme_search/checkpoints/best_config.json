@@ -1,0 +1,14 @@
+{
+  "model": "Stack_SVC(C=10)+CatBoost(d=4)_LR(C=0.3)",
+  "features": ["engineered_base", "sequence_slope", "sequence_accel", "sequence_autocorr", "sequence_entropy"],
+  "base_models": ["SVC(C=10, gamma=auto)", "CatBoost(n_estimators=400, depth=4, lr=0.05)"],
+  "meta_model": "LogisticRegression(C=0.3)",
+  "cv": "RepeatedStratifiedKFold(n_splits=5, n_repeats=2)",
+  "best_oof": 0.5997,
+  "best_experiment": "EXP-013",
+  "multi_seed_mean": 0.5901,
+  "nested_cv": 0.5866,
+  "features_count": 546,
+  "files": ["data/train.csv", "data/test.csv"],
+  "date": "2026-07-16"
+}
